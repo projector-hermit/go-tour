@@ -11,6 +11,12 @@ var (
 	z      complex128 = cmplx.Sqrt(69)
 )
 
+const (
+	a = "вселенная"
+	b = "бесконечна,"
+	c = "а ты?"
+)
+
 func main() {
 	w := 60 + 9
 	t := false
@@ -19,4 +25,5 @@ func main() {
 	fmt.Printf("Тип: %T Значение: %v\n", MaxInt, MaxInt)
 	fmt.Printf("Тип: %T Значение: %v\n", z, z)
 	fmt.Printf("%v %v %q\n", w, t, f)
+	fmt.Println(a, b, c)
 }
