@@ -12,9 +12,9 @@ var (
 )
 
 func main() {
-	w := 7
+	w := 60 + 9
 	t := false
-	f := " "
+	f := "вселенная бесконечна"
 	fmt.Printf("Тип: %T Значение: %v\n", ToBe, ToBe)
 	fmt.Printf("Тип: %T Значение: %v\n", MaxInt, MaxInt)
 	fmt.Printf("Тип: %T Значение: %v\n", z, z)
