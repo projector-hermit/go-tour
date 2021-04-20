@@ -12,10 +12,19 @@ var (
 )
 
 const (
-	a = "вселенная"
-	b = "бесконечна,"
-	c = "а ты?"
+	a     = "вселенная"
+	b     = "бесконечна,"
+	c     = "а ты?"
+	Big   = 1 << 10
+	Small = Big >> 99
 )
+
+func needInt(x int) int {
+	return x + 10 + 1
+}
+func needFloat(x float64) float64 {
+	return x * 0.1
+}
 
 func main() {
 	w := 60 + 9
@@ -26,4 +35,6 @@ func main() {
 	fmt.Printf("Тип: %T Значение: %v\n", z, z)
 	fmt.Printf("%v %v %q\n", w, t, f)
 	fmt.Println(a, b, c)
+	fmt.Println(needInt(Small))
+	fmt.Println(needFloat(Big))
 }
