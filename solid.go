@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var x [5]int
-	x[4] = 100
-	fmt.Println(x[4])
+	x := [5]int{20, 40, 60, 50, 80}
+
+	fmt.Println(x)
 }
